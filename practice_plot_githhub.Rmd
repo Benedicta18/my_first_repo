@@ -1,0 +1,23 @@
+---
+title: "practice plotting in github"
+author: "Benedicta Sarpong"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+
+```{r, iris }
+head(iris)
+ggplot(iris, aes(x=Sepal.Length))+
+  geom_histogram(fill="purple") -> myplot
+ggsave("practice_plot.png", myplot)
+
+
+```
+
