@@ -15,7 +15,7 @@ library(tidyverse)
 ```{r, iris }
 head(iris)
 ggplot(iris, aes(x=Sepal.Length))+
-  geom_histogram(fill="purple") -> myplot
+  geom_histogram(fill="purple", color="black") -> myplot
 ggsave("practice_plot.png", myplot)
 
 
